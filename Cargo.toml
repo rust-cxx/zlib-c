@@ -1,0 +1,17 @@
+[package]
+name = "zlib"
+version = "0.1.0"
+license = "ZLIB"
+description = "zlib"
+authors = ["Rui <2221870259@qq.com>"]
+homepage = "https://github.com/madler/zlib"
+repository = "https://github.com/rust-cxx/zlib-c.git"
+edition = "2018"
+build = "build.rs"
+
+[build-dependencies]
+cargo-cxx = "0.1"
+
+[lib]
+name = "zlib_cxx"
+path = "lib.rs"
